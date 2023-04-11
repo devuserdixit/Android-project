@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with Banks"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/sbi"/>
+
+        <ImageView
+            android:id="@+id/sbiphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsbi"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+
+            android:id="@+id/sbishare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hdfc"/>
+
+        <ImageView
+            android:id="@+id/hdfcphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnhdfc"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/hdfcshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icici"/>
+
+        <ImageView
+            android:id="@+id/iciciphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnicici"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/icicishare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/kotak"/>
+
+        <ImageView
+            android:id="@+id/kotakphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnkotak"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/kotakshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/punjab"/>
+
+        <ImageView
+            android:id="@+id/punjabphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnpnb"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/punjabshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bob"/>
+
+        <ImageView
+            android:id="@+id/bobphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnbob"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/bobshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/varachha"/>
+
+        <ImageView
+            android:id="@+id/varachaaphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnvarachha"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/varachaashare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/yes"/>
+
+        <ImageView
+            android:id="@+id/yesphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnyes"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/yesshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/axis"/>
+
+        <ImageView
+            android:id="@+id/axisphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnaxis"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/axisshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/union"/>
+
+        <ImageView
+            android:id="@+id/unionphone"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnunion"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:id="@+id/unionshare"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
