@@ -11,9 +11,10 @@
        android:weightSum="8"
         android:background="#875A17"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp">
+        android:layout_height="@dimen/_45sdp">
 
        <ImageView
+           android:id="@+id/imgback"
            android:layout_gravity="center"
            android:layout_weight="1"
            android:src="@drawable/back"
@@ -24,7 +25,8 @@
             android:layout_margin="@dimen/_10sdp"
             android:layout_weight="6"
             android:id="@+id/txtDisplayTitle"
-            android:layout_gravity="center"
+            android:gravity="center"
+            tools:text="Shayari"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"

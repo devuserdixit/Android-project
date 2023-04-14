@@ -32,6 +32,9 @@ class DisplayCategoryActivity : AppCompatActivity() {
             var favorite = Intent(this,FavoriteActivity::class.java)
             startActivity(favorite)
         }
+        binding.imgback.setOnClickListener{
+            onBackPressed()
+        }
 
         var categoryName: String? = intent.getStringExtra("Title")
         binding.txtDisplayTitle.text = categoryName
