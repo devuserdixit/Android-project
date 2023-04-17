@@ -34,8 +34,8 @@ class FavoriteAdapter(var like: (Int,Int) -> Unit) :
 
         holder.imglike.setOnClickListener{
             like.invoke(list[position].Shayari_id,0)
-//            holder.imglike.setImageResource(R.drawable.heart)
-//            list[position].fav = 0
+            holder.imglike.setImageResource(R.drawable.heart)
+            list[position].fav = 0
             deleteItem(position)
         }
     }

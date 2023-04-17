@@ -39,8 +39,8 @@ class DisplayCategoryAdapter(
 
         if (shayariList[position].fav == 1){
             holder.imglike.setImageResource(R.drawable.heartcolor)
-//        }else{
-//            holder.imglike.setImageResource(R.drawable.heart)
+        }else{
+            holder.imglike.setImageResource(R.drawable.heart)
         }
         holder.imglike.setOnClickListener{
             if (shayariList[position].fav == 1){

@@ -27,6 +27,10 @@ class ShayariDisplayActivity : AppCompatActivity() {
         var ShayariName: String? = intent.getStringExtra("ShayariItem")
         binding.txtShayariDisplay.text = ShayariName
 
+        binding.imgBack.setOnClickListener{
+            onBackPressed()
+        }
+
         binding.imgshare.setOnClickListener {
             val share = Intent(Intent.ACTION_SEND)
             share.type = "text/plan"
@@ -41,7 +45,7 @@ class ShayariDisplayActivity : AppCompatActivity() {
                 getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText("label", ShayariName)
             clipboard.setPrimaryClip(clip)
-            Toast.makeText(this, "Copyied", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Copy Successfully", Toast.LENGTH_SHORT).show()
         }
 
         binding.imgAdd.setOnClickListener {
@@ -56,9 +60,6 @@ class ShayariDisplayActivity : AppCompatActivity() {
               val data = result.data
               val uri = data!!.data
               binding.imgShow.setImageURI(uri)
-          }
-          binding.imgBack.setOnClickListener{
-              onBackPressed()
           }
     }
 }
