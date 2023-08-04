@@ -1,10 +1,13 @@
 package com.example.shayariapplication
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Adapter
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.shayariapplication.databinding.ActivityDisplayCategoryBinding
 
@@ -36,11 +39,18 @@ class DisplayCategoryActivity : AppCompatActivity() {
             onBackPressed()
         }
 
+//        binding.imgCopy.setOnClickListener {
+//            val clipboard: ClipboardManager =
+//                getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+//            val clip = ClipData.newPlainText("label", ShayariName)
+//            clipboard.setPrimaryClip(clip)
+//            Toast.makeText(this, "Copy Successfully", Toast.LENGTH_SHORT).show()
+//        }
+
         var categoryName: String? = intent.getStringExtra("Title")
         binding.txtDisplayTitle.text = categoryName
 
         cate_id = intent.getIntExtra("Id", 0)
-//        shayariList = dbD.ShayariData(c_ID)
 
         adapter = DisplayCategoryAdapter(
              shayariList,

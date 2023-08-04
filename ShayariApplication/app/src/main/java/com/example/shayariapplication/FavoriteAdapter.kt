@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FavoriteAdapter(var like: (Int,Int) -> Unit) :
+class FavoriteAdapter(var like: (Int, Int) -> Unit) :
     RecyclerView.Adapter<FavoriteAdapter.MyViewHolder>() {
 
     var list = ArrayList<FavoriteModalClass>()
@@ -32,21 +32,23 @@ class FavoriteAdapter(var like: (Int,Int) -> Unit) :
 
         holder.imglike.setImageResource(R.drawable.heartcolor)
 
-        holder.imglike.setOnClickListener{
-            like.invoke(list[position].Shayari_id,0)
+        holder.imglike.setOnClickListener {
+            like.invoke(list[position].Shayari_id, 0)
             holder.imglike.setImageResource(R.drawable.heart)
             list[position].fav = 0
             deleteItem(position)
         }
     }
-    fun updateList(list:ArrayList<FavoriteModalClass>){
-        this.list=list
+
+    fun updateList(list: ArrayList<FavoriteModalClass>) {
+        this.list = list
         notifyDataSetChanged()
     }
-    private fun deleteItem(position: Int){
+
+    private fun deleteItem(position: Int) {
         list.removeAt(position)
         notifyItemRemoved(position)
-        notifyItemRangeChanged(position,list.size)
+        notifyItemRangeChanged(position, list.size)
     }
 
 }

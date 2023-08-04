@@ -15,22 +15,31 @@
 
         <ImageView
             android:id="@+id/imgBack"
-            app:tint="@color/black"
             android:layout_width="26.00dp"
             android:layout_height="26.00dp"
             android:layout_gravity="start"
             android:layout_marginHorizontal="26.00dp"
-            android:src="@drawable/back"/>
+            android:src="@drawable/back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/txtDisplayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
         android:layout_margin="13.00dp"
-        app:cardCornerRadius="13.00dp"
-        android:id="@+id/cardView">
+        app:cardCornerRadius="13.00dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,6 +48,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/Screenshot"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -46,7 +56,7 @@
                     android:id="@+id/imgShow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop" />
 
                 <TextView
                     android:id="@+id/txtShayariDisplay"
@@ -54,61 +64,52 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_marginHorizontal="26.00dp"
-                    android:textSize="19.50sp"
-                    android:textColor="@color/black"
                     android:fontFamily="monospace"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/imgAdd"
-                    android:layout_width="52.00dp"
-                    android:layout_height="52.00dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="13.00dp"
-                    android:layout_marginTop="13.00dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="60dp"
-                    android:src="@drawable/image" />
             </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_gravity="bottom"
-            android:weightSum="3"
-            android:background="#60E6C9C9"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp">
-
-<!--            <ImageView-->
-<!--                android:layout_gravity="center"-->
-<!--                android:src="@drawable/heart"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_width="@dimen/_22sdp"-->
-<!--                android:layout_height="@dimen/_22sdp"/>-->
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="bottom"
+            android:background="#60E6C9C9"
+            android:weightSum="4">
 
             <ImageView
                 android:id="@+id/imgCopy"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
                 android:layout_gravity="center"
-                android:src="@drawable/copy"
                 android:layout_weight="1"
-                android:layout_width="@dimen/_22sdp"
-                android:layout_height="@dimen/_22sdp"/>
+                android:src="@drawable/copy" />
 
             <ImageView
-                android:layout_gravity="center"
+                android:id="@+id/imgDownload"
                 android:layout_width="@dimen/_22sdp"
-                android:layout_height="@dimen/_22sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/download" />
 
             <ImageView
                 android:id="@+id/imgshare"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center"
-                android:src="@drawable/share"
                 android:layout_weight="1"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"/>
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/image" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
